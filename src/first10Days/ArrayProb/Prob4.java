@@ -1,4 +1,4 @@
-package first10Days.Day3;
+package first10Days.ArrayProb;
 
 //Write a Java program to print all elements of an integer array.
 //
