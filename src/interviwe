@@ -79,6 +79,46 @@ It gets a default value automatically by JVM.
 
 5. Difference between widening & narrowing?
 
-Widening: Small → large (automatic)
+6.Widening: Small → large (automatic)
 
 Narrowing: Large → small (explicit casting required
+
+Difference between == and =
+
+Definition:
+= is an assignment operator, while == is a comparison operator.
+
+Explanation:
+= assigns a value to a variable, whereas == checks whether two values are equal and returns true or false.
+
+Difference between & and &&
+
+Definition:
+& is a bitwise AND / non–short-circuit logical operator, while && is a short-circuit logical AND operator.
+
+Explanation:
+& evaluates both operands always, but && evaluates the second operand only if the first is true, improving performance.
+
+Why x++ is faster than x = x + 1?
+
+Definition:
+x++ is a single JVM-level operation.
+
+Explanation:
+x++ is optimized by the compiler and JVM, while x = x + 1 involves extra steps like addition and assignment, making it slightly slower.
+
+Can we use ++ with boolean? (❌)
+
+Definition:
+Increment operator works only with numeric data types.
+
+Explanation:
+Boolean has only true or false, so incrementing it is not meaningful and causes a compile-time error.
+
+What is Operator Precedence?
+
+Definition:
+Operator precedence defines the order in which operators are evaluated in an expression.
+
+Explanation:
+Operators with higher precedence are evaluated first; parentheses () can be used to change the evaluation order.
