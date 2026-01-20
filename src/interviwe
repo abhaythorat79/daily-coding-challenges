@@ -1,0 +1,84 @@
+Q1. Why Java is platform independent?
+Bytecode runs on JVM, and JVM is available for all platforms.
+
+Q2. Can Java run without JVM?
+No. JVM is mandatory to execute bytecode.
+
+Q3. Why main method is public?
+So JVM can access it from outside the class.
+
+Q4. Why Java is not 100% object-oriented?
+Because it supports primitive data types.
+
+Q5. Is Java compiled or interpreted?
+Both (compiled to bytecode, interpreted/JIT at runtime).
+
+1. What is JVM?
+Definition:
+JVM (Java Virtual Machine) is a runtime environment that executes Java bytecode.
+
+Explanation:
+It provides memory management, security, and platform independence by converting bytecode into machine code.
+
+2. What is JIT Compiler?
+Definition:
+JIT (Just-In-Time) compiler is a part of JVM that converts bytecode into native machine code at runtime.
+
+Explanation:
+It improves performance by compiling frequently used bytecode into faster machine-level instructions.
+
+3. What is Bytecode?
+Definition:
+Bytecode is the intermediate compiled code generated from Java source code.
+
+Explanation:
+It is platform-independent and executed by the JVM, not directly by the operating system.
+
+Tricky
+
+4. Is heap memory thread-safe? (Yes, shared)
+Definition:
+Heap memory is a shared memory area accessible by multiple threads.
+
+Explanation:
+Because it is shared, heap memory is not thread-safe by default and requires synchronization to avoid data inconsistency.
+
+5. Can stack memory overflow? (Yes)
+Definition:
+Stack overflow occurs when stack memory exceeds its limit.
+
+Explanation:
+It usually happens due to deep or infinite method calls (like infinite recursion).
+
+6. Who manages heap memory? (GC)
+Definition:
+Heap memory is managed by the Garbage Collector (GC).
+
+Explanation:
+GC automatically frees memory by removing objects that are no longer referenced.
+
+Why explicit casting is required?
+→ To prevent data loss.
+
+. Difference between primitive & non-primitive?
+
+1. Primitive stores actual value and has fixed size.
+Non-primitive stores reference and has dynamic size.
+
+2. Why local variables have no default value?
+
+Because JVM does not initialize local variables to improve performance.
+
+3. Why char uses 2 bytes?
+
+Because Java uses Unicode, which needs 2 bytes to represent characters.
+
+4. What happens if we don't initialize instance variable?
+
+It gets a default value automatically by JVM.
+
+5. Difference between widening & narrowing?
+
+Widening: Small → large (automatic)
+
+Narrowing: Large → small (explicit casting required
