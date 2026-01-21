@@ -122,3 +122,74 @@ Operator precedence defines the order in which operators are evaluated in an exp
 
 Explanation:
 Operators with higher precedence are evaluated first; parentheses () can be used to change the evaluation order.
+
+🔁 Difference Between for and while
+Point	for loop	while loop
+Use case	When number of iterations is known	When iterations are unknown
+Syntax	Initialization, condition, increment in one line	Initialization outside, increment inside
+Readability	More compact	More flexible
+Common use	Arrays, counters	User input, infinite loops
+🔤 Can We Use String in switch?
+
+✅ Yes, from Java 7 onwards
+
+String day = "MON";
+
+switch (day) {
+    case "MON":
+        System.out.println("Monday");
+        break;
+}
+
+
+📌 Internally, Java uses hashCode() and equals().
+
+⛔ What Happens If break Is Missing?
+
+👉 Fall-through occurs
+
+int x = 2;
+switch (x) {
+    case 1:
+        System.out.println("One");
+    case 2:
+        System.out.println("Two");
+    case 3:
+        System.out.println("Three");
+}
+
+Output:
+Two
+Three
+
+
+📌 Execution continues until break or end of switch.
+
+🔀 Difference Between break and continue
+Point	break	continue
+Function	Terminates loop	Skips current iteration
+Control	Comes out of loop	Goes to next iteration
+Used in	Loop & switch	Only in loops
+⚡ Which Loop Is Faster?
+
+👉 No difference logically
+
+for, while, do-while all compile to same bytecode
+
+Performance depends on logic, not loop type
+
+Choice should be based on readability
+
+🎯 Interview One-Liners
+
+for → fixed iterations
+
+while → condition-based
+
+String in switch → Java 7+
+
+Missing break → fall-through
+
+break exits, continue skips
+
+Loop speed → same
