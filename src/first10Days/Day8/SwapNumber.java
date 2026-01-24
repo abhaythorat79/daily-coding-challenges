@@ -1,4 +1,4 @@
-package first10Days;
+package first10Days.Day8;
 
 public class SwapNumber {
 
