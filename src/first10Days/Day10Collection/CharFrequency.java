@@ -23,11 +23,9 @@ public class CharFrequency {
                 map.put(ch, 1);
             }
         }
-
         // print character frequency
         for (Map.Entry<Character, Integer> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " = " + entry.getValue());
         }
     }
 }
-
