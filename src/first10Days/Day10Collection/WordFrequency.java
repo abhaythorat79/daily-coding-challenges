@@ -6,7 +6,7 @@ import java.util.Map;
 public class WordFrequency {
     public static void main(String[] args) {
 
-        String s = "java is easy and java is powerful";
+        String s = "java is easy and java is powerful"; 
         s = s.toLowerCase();   // convert to lowercase
 
         String[] words = s.split(" ");
