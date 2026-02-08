@@ -1,4 +1,4 @@
-package first10Days.ArrayProb;
+package first10Days.Day9Strings;
 
 public class ReverseEachWord {
     public static void main(String[] args) {
