@@ -13,7 +13,6 @@ public class LongestWord {
                 longest = words[i];
             }
         }
-
         System.out.println(longest);
     }
 }
